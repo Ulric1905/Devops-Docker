@@ -33,8 +33,6 @@ jobs:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "sf-project/composer.json" }}
-        
 
       # run tests!
-	
-      - run: cd sf-project && bin/phpunit
+	- run: cd sf-project && bin/phpunit
