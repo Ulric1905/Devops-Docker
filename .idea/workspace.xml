@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="474aeb54-3513-4fd0-8518-2dfbb0338844" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/Makefile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/docker-compose.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/docker/nginx/nginx.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/docker/php/Dockerfile" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/docker/php/fpm.conf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/docker/php/php.ini" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sf-project/src/Controller/DefaultController1.php" />
-      <change beforePath="$PROJECT_DIR$/.editorconfig" afterPath="$PROJECT_DIR$/sf-project/.editorconfig" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="$PROJECT_DIR$/Vagrantfile" />
-      <change beforePath="$PROJECT_DIR$/doc/how-to-setup-machine.md" afterPath="$PROJECT_DIR$/doc/how-to-setup-machine.md" />
-      <change beforePath="$PROJECT_DIR$/provisioning/ansible.cfg" afterPath="$PROJECT_DIR$/provisioning/ansible.cfg" />
-      <change beforePath="$PROJECT_DIR$/provisioning/group_vars/all" afterPath="$PROJECT_DIR$/provisioning/group_vars/all" />
-      <change beforePath="$PROJECT_DIR$/provisioning/hosts" afterPath="$PROJECT_DIR$/provisioning/hosts" />
-      <change beforePath="$PROJECT_DIR$/provisioning/playbook.yml" afterPath="$PROJECT_DIR$/provisioning/playbook.yml" />
-      <change beforePath="$PROJECT_DIR$/provisioning/roles/docker/tasks/main.yml" afterPath="$PROJECT_DIR$/provisioning/roles/docker/tasks/main.yml" />
-      <change beforePath="$PROJECT_DIR$/provisioning/roles/elasticsearch/tasks/main.yml" afterPath="$PROJECT_DIR$/provisioning/roles/elasticsearch/tasks/main.yml" />
-    </list>
+    <list default="true" id="474aeb54-3513-4fd0-8518-2dfbb0338844" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -329,12 +308,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542576350830</updated>
       <workItem from="1542576355050" duration="1624000" />
-      <workItem from="1542621375246" duration="11713000" />
+      <workItem from="1542621375246" duration="12120000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13337000" />
+    <option name="totallyTimeSpent" value="13744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
