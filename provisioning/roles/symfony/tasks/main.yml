@@ -1,0 +1,20 @@
+# provisioning/roles/symfony/tasks/main.yaml
+---
+- name: Install composer
+  apt:
+    pkg: composer
+    state: latest
+  tags:
+    - symfony
+
+- name: Check if symfony is installed
+  stat: path=/vagrant/{{ application_folder }}
+  register: app_folder
+  tags:
+    - symfony
+   
+- name: Install Symfony
+  raw: cd /vagrant && composer create-project symfony/website-skeleton {{ application_folder }}
+  when: app_folder.stat.isdir is not defined
+  tags:
+    - symfony

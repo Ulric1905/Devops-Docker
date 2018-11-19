@@ -1,0 +1,13 @@
+---
+- name: Ubuntu dev machine
+  hosts: all
+  gather_facts: no
+  become: yes
+  roles:
+    - docker
+    - elasticsearch
+    - common
+    - php-fpm
+    - nginx
+    - mysql-server
+    - symfony 

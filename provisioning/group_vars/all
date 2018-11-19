@@ -1,0 +1,8 @@
+---
+username: vagrant
+nginx_user: nginx
+application_folder: application
+php_fpm_socket: php_fpm_socket
+database_name: application
+database_user: app_user  
+database_password: s3cr3t

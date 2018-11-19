@@ -1,0 +1,40 @@
+# provisioning/roles/mysql-server/tasks/main.yml
+---
+- name: install mysql-server
+  apt: pkg={{item}} state=latest
+  with_items:
+    - mysql-server
+    - libmysqlclient-dev
+  tags:
+    - mysql-server
+
+- name: Install the Python MySQLB module (required for DB with ansible)
+  pip:
+    name: MySQL-python
+  tags:
+    - mysql-server
+
+- name: create database
+  mysql_db:
+    name: "{{database_name}}"
+    state: present
+  tags:
+    - mysql-server
+
+- name: remove anonymous user for localhost
+  mysql_user:
+    name: ''
+    host: localhost
+    state: absent  
+  tags:
+    - mysql-server
+
+- name: create user
+  mysql_user:
+    name: "{{database_user}}"
+    password: "{{database_password}}"
+    priv: '*.*:ALL'
+    host: localhost
+    state: present 
+  tags:
+    - mysql-server
