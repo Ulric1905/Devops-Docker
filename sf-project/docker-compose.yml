@@ -8,6 +8,9 @@ services:
       - './:/app'
     ports:
       - '8081:80'
+    networks:
+      default: {}
+      sf_monitoring: {}
 
   php:
     build:
@@ -18,3 +21,14 @@ services:
       - './:/app'
       - './docker/php/fpm.conf:/usr/local/etc/php-fpm.conf:ro'
       - './docker/php/php.ini:/usr/local/etc/php/php.ini:ro'
+
+    networks:
+        default: {}
+        sf_monitoring: {}
+
+
+
+networks:
+  sf_monitoring:
+    external: true
+

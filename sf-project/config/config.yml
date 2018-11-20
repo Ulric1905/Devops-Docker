@@ -1,0 +1,11 @@
+services:
+    my_formatter:
+        class: Monolog\Formatter\JsonFormatter
+
+monolog:
+    handlers:
+
+        syslog:
+            type: syslog
+
+            level: error
